@@ -3,6 +3,7 @@
       default-active="2"
       class="el-menu-vertical-demo"
       @select="handleSelect"
+      style="height: 100%"
     >
       <el-menu-item index="dashboard">
         <el-icon><icon-menu /></el-icon>
