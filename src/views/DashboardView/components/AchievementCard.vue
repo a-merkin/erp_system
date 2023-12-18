@@ -3,7 +3,7 @@
     <div class="achievement-header">Достижение</div>
     <div class="achievement-content">
       <div class="achievement-percentage">61%</div>
-      <div class="achievement-values">1,649K / 2,713K</div>
+      <div class="achievement-values">1,649K / 3K</div>
       <div class="achievement-bar">
         <div class="achievement-bar-fill" :style="{ width: '61%' }"></div>
       </div>
