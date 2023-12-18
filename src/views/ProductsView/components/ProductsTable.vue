@@ -18,7 +18,7 @@
           size="small"
           type="success"
           @click="handleEdit(scope.$index, scope.row)"
-          >Отправить заявку</el-button
+          >Заявка на продажу</el-button
         >
         <el-button size="small" @click="handleEdit(scope.$index, scope.row)"
           >Изменить</el-button
