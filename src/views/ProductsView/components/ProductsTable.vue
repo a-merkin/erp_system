@@ -2,7 +2,7 @@
   <el-table :data="products" style="width: 100%">
     <el-table-column prop="name" label="Имя" />
     <el-table-column prop="price" label="Цена" />
-    <el-table-column prop="amount" label="Кол-во товара" />
+    <el-table-column prop="amount" label="Кол-во товара на складе" />
     <el-table-column label="Кол-во товара в доставке">
       <template #default="scope">
         <div style="display: flex; gap: 10px; align-items: center">
@@ -11,14 +11,14 @@
         </div>
       </template>
     </el-table-column>
-    <el-table-column prop="purchaseOrders" label="Кол-во покупок" />
+    <el-table-column prop="purchaseOrders" label="Кол-во доставленного товара" />
     <el-table-column label="Операции">
       <template #default="scope">
         <el-button
           size="small"
           type="success"
           @click="handleEdit(scope.$index, scope.row)"
-          >Заказать</el-button
+          >Отправить заявку</el-button
         >
         <el-button size="small" @click="handleEdit(scope.$index, scope.row)"
           >Изменить</el-button
