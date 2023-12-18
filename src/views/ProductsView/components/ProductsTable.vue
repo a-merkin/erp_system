@@ -11,14 +11,23 @@
         </div>
       </template>
     </el-table-column>
-    <el-table-column prop="purchaseOrders" label="Кол-во доставленного товара" />
-    <el-table-column label="Операции">
+    <el-table-column
+      prop="purchaseOrders"
+      label="Кол-во доставленного товара"
+    />
+    <el-table-column label="Операции" width="500">
       <template #default="scope">
         <el-button
           size="small"
           type="success"
           @click="handleEdit(scope.$index, scope.row)"
           >Заявка на продажу</el-button
+        >
+        <el-button
+          size="small"
+          type="warning"
+          @click="handleEdit(scope.$index, scope.row)"
+          >Заявка на покупку</el-button
         >
         <el-button size="small" @click="handleEdit(scope.$index, scope.row)"
           >Изменить</el-button
