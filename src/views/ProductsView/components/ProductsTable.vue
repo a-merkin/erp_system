@@ -26,7 +26,7 @@
         <el-button
           size="small"
           type="warning"
-          @click="handleEdit(scope.$index, scope.row)"
+          @click="handleBuy(scope.row.name)"
           >Заявка на покупку</el-button
         >
         <el-button size="small" @click="handleEdit(scope.$index, scope.row)"
@@ -46,8 +46,17 @@
 <script setup>
 import { useProductsStore } from "@/store/products.js";
 import { Van } from "@element-plus/icons-vue";
+import { useModal } from 'vue-final-modal'
+import ModalProductBuy from '@/components/ModalProductBuy.vue'
 
 const { products } = useProductsStore();
+
+const handleBuy = () => {
+  const {open} = useModal({
+    component: ModalProductBuy
+  })
+  open()
+}
 </script>
 
 <style lang="scss" scoped></style>
