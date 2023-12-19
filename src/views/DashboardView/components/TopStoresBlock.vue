@@ -1,6 +1,8 @@
 <template>
   <div class="card">
-    <div class="header">Самые прибыльные заказчики</div>
+    <div class="header">
+      <h2>Самые прибыльные заказчики</h2>
+    </div>
     <div class="content">
       <div class="bars">
         <div class="bar" v-for="(store, index) in stores" :key="index" :style="{ width: store.percentage + '%' }">
@@ -40,10 +42,7 @@ const stores = ref([
 }
 
 .header {
-  text-align: center;
   margin-bottom: 20px;
-  font-size: 18px;
-  font-weight: bold;
 }
 
 .content {

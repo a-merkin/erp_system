@@ -23,10 +23,10 @@ import { ref } from 'vue';
 // Repeat for each icon
 
 const categories = ref([
-  { name: 'Rice', achieved: 994, total: 1754, icon: 'path-to-rice-icon.svg' },
-  { name: 'Vegetables', achieved: 164, total: 570, icon: 'path-to-vegetable-icon.svg' },
-  { name: 'Biscuits', achieved: 223, total: 373, icon: 'path-to-biscuit-icon.svg' },
-  { name: 'Juice', achieved: 118, total: 167, icon: 'path-to-juice-icon.svg' }
+  { name: 'Рис', achieved: 994, total: 1754, icon: 'path-to-rice-icon.svg' },
+  { name: 'Морковь', achieved: 164, total: 570, icon: 'path-to-vegetable-icon.svg' },
+  { name: 'Капуста', achieved: 223, total: 373, icon: 'path-to-biscuit-icon.svg' },
+  { name: 'Гречка', achieved: 118, total: 167, icon: 'path-to-juice-icon.svg' }
 ]);
 
 // You can also import and use real icons if you have them.
@@ -90,7 +90,7 @@ const categories = ref([
 }
 
 .progress {
-  background: orange;
+  background: #409eff;
   height: 100%;
   border-radius: 5px;
 }
