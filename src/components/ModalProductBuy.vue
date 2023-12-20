@@ -31,6 +31,7 @@ const options = [
 ]
 
 const value = ref({})
+const count = ref(0)
 </script>
 
 <template>
@@ -55,7 +56,7 @@ const value = ref({})
             </el-select>
           </el-form-item>
           <el-form-item label="Количество">
-            <el-input type="number"></el-input>
+            <el-input type="number" v-model="count"></el-input>
           </el-form-item>
         </el-form>
         <el-button
@@ -65,6 +66,12 @@ const value = ref({})
         >
           Отправить заявку на поставку
         </el-button>
+        <el-button
+            class="mt-1 ml-auto px-2 border rounded-lg"
+            @click="emit('close')"
+          >
+            Отмена
+          </el-button>
       </div>
     </div>
   </VueFinalModal>
